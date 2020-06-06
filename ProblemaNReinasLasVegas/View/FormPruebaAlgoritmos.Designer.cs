@@ -30,10 +30,11 @@
         {
             this.EjecutarAlgoritmoBtn = new System.Windows.Forms.Button();
             this.GridViewResultadosData = new System.Windows.Forms.DataGridView();
-            this.spinBoxNReinas = new System.Windows.Forms.NumericUpDown();
             this.Algoritmo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Solucion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tiempo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.spinBoxNReinas = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewResultadosData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spinBoxNReinas)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +61,24 @@
             this.GridViewResultadosData.Size = new System.Drawing.Size(469, 150);
             this.GridViewResultadosData.TabIndex = 1;
             // 
+            // Algoritmo
+            // 
+            this.Algoritmo.HeaderText = "Algoritmo";
+            this.Algoritmo.Name = "Algoritmo";
+            this.Algoritmo.Width = 125;
+            // 
+            // Solucion
+            // 
+            this.Solucion.HeaderText = "Solucion";
+            this.Solucion.Name = "Solucion";
+            this.Solucion.Width = 150;
+            // 
+            // Tiempo
+            // 
+            this.Tiempo.HeaderText = "Tiempo";
+            this.Tiempo.Name = "Tiempo";
+            this.Tiempo.Width = 150;
+            // 
             // spinBoxNReinas
             // 
             this.spinBoxNReinas.Increment = new decimal(new int[] {
@@ -82,29 +101,21 @@
             0,
             0});
             // 
-            // Algoritmo
+            // label1
             // 
-            this.Algoritmo.HeaderText = "Algoritmo";
-            this.Algoritmo.Name = "Algoritmo";
-            this.Algoritmo.Width = 125;
-            // 
-            // Solucion
-            // 
-            this.Solucion.HeaderText = "Solucion";
-            this.Solucion.Name = "Solucion";
-            this.Solucion.Width = 150;
-            // 
-            // Tiempo
-            // 
-            this.Tiempo.HeaderText = "Tiempo";
-            this.Tiempo.Name = "Tiempo";
-            this.Tiempo.Width = 150;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(256, 174);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Numero de reinas";
             // 
             // FormPruebaAlgoritmos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 250);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.spinBoxNReinas);
             this.Controls.Add(this.GridViewResultadosData);
             this.Controls.Add(this.EjecutarAlgoritmoBtn);
@@ -113,6 +124,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.GridViewResultadosData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spinBoxNReinas)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -124,6 +136,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Algoritmo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Solucion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tiempo;
+        private System.Windows.Forms.Label label1;
     }
 }
 

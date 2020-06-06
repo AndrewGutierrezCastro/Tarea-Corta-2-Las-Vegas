@@ -93,9 +93,8 @@ namespace ProblemaNReinasLasVegas.Logica
             else
             {
                 while (true)
-                {
-                    Random rnd = new Random();
-                    List<int> lista = Enumerable.Range(0, numeroReinas + 1).ToList<int>();
+                {   
+                    List<int> lista = Enumerable.Range(0, numeroReinas).ToList<int>();
                     int numero = lista.Shuffle().Take(1).ToArray<int>()[0];
                     lista.Remove(numero);
                     columnasPosiciones.Add(numero);

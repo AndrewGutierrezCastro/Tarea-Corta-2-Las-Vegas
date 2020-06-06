@@ -50,7 +50,7 @@ namespace ProblemaNReinasLasVegas
             }
             //Bcktg Las Vegas
             Console.WriteLine("Las vegas");
-            {
+            {/*
                 timeMeasure.Restart();
                 resultado = Logica.ProblemaNReinas.nReinas(numeroReinas, 1);
                 timeMeasure.Stop();
@@ -68,7 +68,7 @@ namespace ProblemaNReinasLasVegas
                 row.Cells[0].Value = resultadosData[0];
                 row.Cells[1].Value = resultadosData[1];
                 row.Cells[2].Value = resultadosData[2];
-                GridViewResultadosData.Rows.Add(row);
+                GridViewResultadosData.Rows.Add(row);*/
             }
             //Backtracking
             Console.WriteLine("Backtracking");
